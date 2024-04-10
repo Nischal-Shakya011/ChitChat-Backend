@@ -3,6 +3,7 @@ const dotenv = require('dotenv')
 const app = express();
 
 dotenv.config();
+require('./config/db')
 
 app.get("/", (req, res)=>{
     res.send("api started")
